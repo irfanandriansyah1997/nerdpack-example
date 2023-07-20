@@ -1,0 +1,88 @@
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate-dialog{
+  height:calc(100% + 160px);
+  margin:0 -40px;
+  background-color:#f0f3f7;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate-dialog__header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:32px;
+  padding:0 40px 0 32px;
+  height:55px;
+  background-color:#fff;
+  box-shadow:0px 1px 6px 0px rgba(49,53,59,.12);
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate-dialog__content{
+  padding:0 32px;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate-dialog__content-row{
+  border-radius:8px;
+  background-color:#fff;
+  box-shadow:0px 1px 6px 0px rgba(49,53,59,.12);
+  padding:16px;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate-dialog__content-row section{
+  margin-bottom:16px;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate-dialog__content-row section>h4{
+  margin-bottom:4px;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate-dialog__content-row section pre{
+  display:inline;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate-dialog__content-row>div{
+  width:100%;
+}
+
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate{
+  width:100%;
+  height:100%;
+  border-radius:4px;
+  background-color:#f0f3f7;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  transition:all cubic-bezier(0.63, 0.01, 0.29, 1) 300ms;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate--loading{
+  background-color:#f0f3f7;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate--error,.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate--layout-danger{
+  background-color:#f94d63;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate--layout-success{
+  background-color:#20ce7d;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate--layout-warning{
+  background-warning:#ff7f17;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate img{
+  position:absolute;
+  top:25px;
+  left:25px;
+  width:60px;
+  filter:grayscale(1);
+  padding:10px;
+  border-radius:50%;
+  background-color:hsla(0,0%,100%,.25);
+  transform:translate(-50%, -50%);
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate__text{
+  text-align:right;
+  position:absolute;
+  right:16px;
+  bottom:16px;
+}
+.nr1-9a7861ee-73f2-4b74-91b4-3dfaf0a6988b .gql-success-rate__spinner{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=https://cli-assets.service.datanerd.us/artifact-index-production/9a7861ee-73f2-4b74-91b4-3dfaf0a6988b/det/9a7861ee-73f2-4b74-91b4-3dfaf0a6988b--styles~c4df1b27.css.map*/

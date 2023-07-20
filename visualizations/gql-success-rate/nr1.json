@@ -1,0 +1,24 @@
+{
+  "schemaType": "VISUALIZATION",
+  "id": "gql-success-rate",
+  "displayName": "GqlSuccessRate",
+  "description": "Custom visualization for displaying GQL success rate on specified operation name",
+  "configuration": [
+    {
+      "name": "accountId",
+      "title": "Account ID",
+      "description": "Account ID to be associated with the query",
+      "type": "account-id"
+    },
+    {
+      "name": "operation",
+      "title": "GQL Operation Name",
+      "type": "string"
+    },
+    {
+      "name": "threshold",
+      "title": "GQL threshold value",
+      "type": "number"
+    }
+  ]
+}

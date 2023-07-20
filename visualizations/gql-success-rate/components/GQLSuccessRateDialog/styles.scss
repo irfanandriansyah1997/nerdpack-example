@@ -1,0 +1,47 @@
+.gql-success-rate-dialog {
+  height: calc(100% + 160px);
+  margin: 0 -40px;
+  background-color: #F0F3F7;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding: 0 40px 0 32px;
+    height: 55px;
+    background-color: #FFF;
+    box-shadow: 0px 1px 6px 0px rgba(49, 53, 59, 0.12);
+  }
+
+  &__content {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &-row {
+      border-radius: 8px;
+      background-color: #FFF;
+      box-shadow: 0px 1px 6px 0px rgba(49, 53, 59, 0.12);
+      padding: 16px;
+
+      section {
+        margin-bottom: 16px;
+
+        > h4 {
+          margin-bottom: 4px;
+        }
+
+        pre {
+          display: inline
+        }
+      }
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+
+}
