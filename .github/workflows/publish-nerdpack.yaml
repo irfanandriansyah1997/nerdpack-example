@@ -2,18 +2,28 @@ name: Publish Nerpack
 run-name: ${{ github.actor }} is testing Nerdpack publish 🚀
 
 on: [push]
+
+permissions: write-all
+
 jobs:
   publish-nerdpack-via-nr1:
     runs-on: ubuntu-latest
     steps:
+      # Checkout lite-tools
+      - name: Checkout lite-tools
+        uses: actions/checkout@v3
+
+      # Setup Node JS
       - name: Setup Node
-        uses: ./.github/actions/setup-node-package-manager
+        uses: ./.github/actions/setup-node-js
         env: 
           NPM_TOKEN: ${{ env.NPM_TOKEN }}
         with:
           node-version: v16.19.0
+      
+      # Install Nr1 & Do publish manually
       - name: Run
         shell: bash
         run: |
           npm install
-          sh etc/nr1/setup.sh
+          sudo sh etc/nr1/setup.sh

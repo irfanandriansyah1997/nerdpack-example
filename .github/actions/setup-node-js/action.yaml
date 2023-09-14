@@ -14,9 +14,3 @@ runs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ inputs.node-version }}
-    
-    # Setup npm packager
-    - name: Setup npm
-      shell: bash
-      run: |
-        npm i -g npm@latest
