@@ -27,5 +27,4 @@ jobs:
         run: |
           npm install
           curl -s https://cli.nr-ext.net/installer.sh | sudo bash
-          sh etc/nr1/setup.sh
-          nr1 nerdpack:publish --profile=account-3630237
+          bash ./etc/nr1/setup.sh -p ${{ secrets.NR_PROFILE }} -k ${{ secrets.NR_API_KEY }}
