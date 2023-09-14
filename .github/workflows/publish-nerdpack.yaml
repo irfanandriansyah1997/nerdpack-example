@@ -1,0 +1,19 @@
+name: Publish Nerpack
+run-name: ${{ github.actor }} is testing Nerdpack publish 🚀
+
+on: [push]
+jobs:
+  publish-nerdpack-via-nr1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node
+        uses: ./.github/actions/setup-node-package-manager
+        env: 
+          NPM_TOKEN: ${{ env.NPM_TOKEN }}
+        with:
+          node-version: v16.19.0
+      - name: Run
+        shell: bash
+        run: |
+          npm install
+          sh etc/nr1/setup.sh

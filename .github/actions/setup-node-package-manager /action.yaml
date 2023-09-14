@@ -1,0 +1,22 @@
+name: Setup Node
+description: Setup nodejs and package manager
+inputs:
+  node-version:
+    description: NodeJS version
+    required: false
+    default: '16.x'
+
+runs:
+  using: composite
+  steps:
+    # setup node js
+    - name: Setup NodeJS
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+    
+    # Setup npm packager
+    - name: Setup npm
+      shell: bash
+      run: |
+        npm i -g npm@latest
