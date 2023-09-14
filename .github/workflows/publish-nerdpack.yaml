@@ -26,4 +26,6 @@ jobs:
         shell: bash
         run: |
           npm install
-          sudo sh etc/nr1/setup.sh
+          curl -s https://cli.nr-ext.net/installer.sh | sudo bash
+          sh etc/nr1/setup.sh
+          nr1 nerdpack:publish --profile=account-3630237

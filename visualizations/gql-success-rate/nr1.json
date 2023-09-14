@@ -19,6 +19,11 @@
       "name": "threshold",
       "title": "GQL threshold value",
       "type": "number"
+    },
+    {
+      "name": "sample bos",
+      "title": "GQL threshold value",
+      "type": "number"
     }
   ]
 }
